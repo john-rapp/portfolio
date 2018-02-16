@@ -13,7 +13,6 @@ body {
 }
 
 section {
-  height: 500px;
   text-align: center;
 }
 
@@ -61,4 +60,18 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.full-row {
+  width: 100%;
+}
+
+.half-column {
+  width: 49%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.section-heading {
+  margin: 30px 0;
 }
