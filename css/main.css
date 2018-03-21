@@ -5,8 +5,8 @@
 
 body {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 700px auto auto auto auto;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 700px repeat(3, auto);
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
@@ -30,7 +30,7 @@ body {
 section {
   text-align: center;
   display: block;
-  padding: 20px 50px;
+  padding: 20px 60px;
 }
 
 .hero-image {
