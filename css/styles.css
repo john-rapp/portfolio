@@ -2,23 +2,26 @@
   box-sizing: border-box;
   margin: 0; }
 
+a:visited {
+  color: inherit; }
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  background-color: #19856c;
-  color: #ddd;
+  background-color: #2980b9;
+  color: #ecf0f1;
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: 500px repeat(3, auto); }
+  grid-template-columns: [col-start] repeat(4, 1fr) [col-end];
+  grid-template-rows: 100vh repeat(4, auto); }
 
 div.social-container a {
-  color: #ddd;
+  color: #ecf0f1;
   text-decoration: none;
   margin: 0 10px; }
 
 footer {
   padding: 30px 0;
-  grid-area: 5 / 1 / 5 / 4; }
+  grid-area: 5 / col-start / 5 / col-end; }
 
 h1 {
   font-size: 3em; }
@@ -41,22 +44,24 @@ h6 {
 section {
   text-align: center;
   display: block;
-  padding: 40px 80px; }
+  padding: 40px 80px;
+  max-width: 1200px;
+  justify-self: center; }
 
 .center-grid-content {
   align-self: center;
   text-align: center; }
 
 .dark-bg {
-  background-color: #19856c;
-  color: #ddd; }
+  background-color: #2980b9;
+  color: #ecf0f1; }
 
 .header {
   display: grid;
-  grid-area: 1 / 1 / 1 / 4; }
+  grid-area: 1 / col-start / 1 / col-end; }
 
 .tech-icon {
-  color: #ddd; }
+  color: #ecf0f1; }
 
 .social-container {
   text-align: center; }
@@ -68,10 +73,10 @@ section {
   margin: 10px; }
 
 #about {
-  grid-area: 2 / 1 / 2 / 4; }
-
-#experience {
-  grid-area: 4 / 1 / 4 / 4; }
+  grid-area: 2 / col-start / 2 / col-end; }
 
 #projects {
-  grid-area: 3 / 1 / 3 / 4; }
+  grid-area: 4 / col-start / 4 / col-end; }
+
+#experience {
+  grid-area: 3 / col-start / 3 / col-end; }

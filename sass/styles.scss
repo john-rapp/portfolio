@@ -5,25 +5,29 @@
   margin: 0;
 }
 
+a:visited {
+  color: inherit;
+}
+
 body {
   font-family: $font-fam;
   font-size: $base-font-size;
   background-color: $primary-dark;
   color: $primary-light;
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: 500px repeat(3, auto);
+  grid-template-columns: [col-start] repeat(4, 1fr) [col-end];
+  grid-template-rows: 100vh repeat(4, auto);
 }
 
 div.social-container a {
-  color: $accent-light;
+  color: $primary-light;
   text-decoration: none;
   margin: 0 10px;
 }
 
 footer {
   padding: 30px 0;
-  grid-area: 5 / 1 / 5 / 4;
+  grid-area: 5 / col-start / 5 / col-end;
 }
 
 h1 {
@@ -54,6 +58,8 @@ section {
   text-align: center;
   display: block;
   padding: 40px 80px;
+  max-width: 1200px;
+  justify-self: center;
 }
 
 .center-grid-content {
@@ -68,11 +74,11 @@ section {
 
 .header {
   display: grid;
-  grid-area: 1 / 1 / 1 / 4;
+  grid-area: 1 / col-start / 1 / col-end;
 }
 
 .tech-icon {
-  color: $accent-dark;
+  color: $primary-light;
 }
 
 .social-container {
@@ -88,13 +94,13 @@ section {
 }
 
 #about {
-  grid-area: 2 / 1 / 2 / 4;
-}
-
-#experience {
-  grid-area: 4 / 1 / 4 / 4;
+  grid-area: 2 / col-start / 2 / col-end;
 }
 
 #projects {
-  grid-area: 3 / 1 / 3 / 4;
+  grid-area: 4 / col-start / 4 / col-end;
+}
+
+#experience {
+  grid-area: 3 / col-start / 3 / col-end;
 }
