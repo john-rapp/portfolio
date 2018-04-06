@@ -1,90 +1,77 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: 700px repeat(3, auto);
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-}
+  background-color: #19856c;
+  color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 500px repeat(3, auto); }
 
-.header {
-  grid-area: 1 / 1 / 1 / 4;
-}
+div.social-container a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 10px; }
 
-#about {
-  grid-area: 2 / 1 / 2 / 4;
-}
+footer {
+  padding: 30px 0;
+  grid-area: 5 / 1 / 5 / 4; }
 
-#projects {
-  grid-area: 3 / 1 / 3 / 4;
-}
+h1 {
+  font-size: 3em; }
 
-#experience {
-  grid-area: 4 / 1 / 4 / 4;
-}
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.25em; }
+
+h4 {
+  font-size: 1.1em; }
+
+h5 {
+  font-size: 0.85em; }
+
+h6 {
+  font-size: 0.5em; }
 
 section {
   text-align: center;
   display: block;
-  padding: 20px 60px;
-}
+  padding: 40px 80px; }
 
-.hero-image {
-  background-image: url("/images/stock-desk.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  position: relative;
-}
-
-.hero-text {
-  color: #fff;
-}
-
-.social-container {
-  text-align: center;
-}
-
-div.social-container a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 10px;
-}
-
-footer {
-  padding: 30px 0;
-  grid-area: 5 / 1 / 5 / 4;
-}
+.center-grid-content {
+  align-self: center;
+  text-align: center; }
 
 .dark-bg {
-  background-color: #515151;
-  color: #fff;
-}
+  background-color: #19856c;
+  color: #ddd; }
 
-.hero-round {
-  height: 400px;
-  width: 400px;
-  background-color: #000;
-  border-radius: 50%;
-}
-
-.center-content {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.section-heading {
-  margin: 0 0 20px;
-}
+.header {
+  display: grid;
+  grid-area: 1 / 1 / 1 / 4; }
 
 .tech-icon {
-  margin: 10px;
-}
+  color: #ddd; }
+
+.social-container {
+  text-align: center; }
+
+.section-heading {
+  margin: 0 0 20px; }
+
+.tech-icon {
+  margin: 10px; }
+
+#about {
+  grid-area: 2 / 1 / 2 / 4; }
+
+#experience {
+  grid-area: 4 / 1 / 4 / 4; }
+
+#projects {
+  grid-area: 3 / 1 / 3 / 4; }
