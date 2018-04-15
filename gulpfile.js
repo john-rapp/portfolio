@@ -1,15 +1,26 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+const gulp = require("gulp");
+const wait = require("gulp-wait");
+const sass = require("gulp-sass");
+const browserSync = require("browser-sync").create();
+
+gulp.task("serve", ["sass"], function() {
+  browserSync.init({
+    server: true
+  });
+
+  gulp.watch("scss/*.scss", ["sass"]);
+  gulp.watch("*.html").on("change", browserSync.reload);
+});
 
 gulp.task("sass", function() {
   return gulp
-    .src("./sass/**/*.scss")
-    .pipe(sass.sync().on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
+    .src("scss/styles.scss")
+    .pipe(wait(500))
+    .pipe(sass())
+    .pipe(gulp.dest("./css"))
+    .pipe(browserSync.stream());
 });
 
-gulp.task("sass:watch", function() {
-  gulp.watch("./sass/**/*.scss", ["sass"]);
-});
+gulp.task("dev", ["serve"]);

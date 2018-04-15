@@ -31,7 +31,7 @@ footer {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 h2 {
@@ -59,7 +59,21 @@ section {
   display: block;
   padding: 40px 80px;
   max-width: 1200px;
+  min-height: 300px;
   justify-self: center;
+}
+
+.card {
+  background-image: url("http://via.placeholder.com/250x250");
+  height: 250px;
+  width: 250px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
 }
 
 .center-grid-content {
@@ -75,6 +89,13 @@ section {
 .header {
   display: grid;
   grid-area: 1 / col-start / 1 / col-end;
+}
+
+.fa-caret-down {
+  position: absolute;
+  bottom: 5%;
+  right: 48.6%;
+  cursor: pointer;
 }
 
 .tech-icon {

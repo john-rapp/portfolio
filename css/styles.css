@@ -8,14 +8,14 @@ a:visited {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  background-color: #2980b9;
-  color: #ecf0f1;
+  background-color: #24805a;
+  color: #f7f7f7;
   display: grid;
   grid-template-columns: [col-start] repeat(4, 1fr) [col-end];
   grid-template-rows: 100vh repeat(4, auto); }
 
 div.social-container a {
-  color: #ecf0f1;
+  color: #f7f7f7;
   text-decoration: none;
   margin: 0 10px; }
 
@@ -24,7 +24,7 @@ footer {
   grid-area: 5 / col-start / 5 / col-end; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 4em; }
 
 h2 {
   font-size: 2em; }
@@ -46,22 +46,40 @@ section {
   display: block;
   padding: 40px 80px;
   max-width: 1200px;
+  min-height: 300px;
   justify-self: center; }
+
+.card {
+  background-image: url("http://via.placeholder.com/250x250");
+  height: 250px;
+  width: 250px;
+  margin: 0 15px;
+  cursor: pointer; }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto); }
 
 .center-grid-content {
   align-self: center;
   text-align: center; }
 
 .dark-bg {
-  background-color: #2980b9;
-  color: #ecf0f1; }
+  background-color: #24805a;
+  color: #f7f7f7; }
 
 .header {
   display: grid;
   grid-area: 1 / col-start / 1 / col-end; }
 
+.fa-caret-down {
+  position: absolute;
+  bottom: 5%;
+  right: 48.6%;
+  cursor: pointer; }
+
 .tech-icon {
-  color: #ecf0f1; }
+  color: #f7f7f7; }
 
 .social-container {
   text-align: center; }
