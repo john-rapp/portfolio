@@ -1,6 +1,6 @@
 function scrollToSection(el) {
   document.querySelector(el).scrollIntoView({
-    behavior: "smooth",
-    block: "start"
+    behavior: 'smooth',
+    block: 'start',
   });
 }

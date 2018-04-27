@@ -2,11 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.23.7",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.0"
-  },
-  "dependencies": {
+    "gulp-sass": "^4.0.1",
     "gulp-wait": "0.0.2"
   }
 }
