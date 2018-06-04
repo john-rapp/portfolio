@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 * {
   box-sizing: border-box;
@@ -12,11 +12,20 @@ a:visited {
 body {
   font-family: $font-fam;
   font-size: $base-font-size;
+  line-height: 1.3;
   background-color: $primary-dark;
   color: $primary-light;
-  display: grid;
-  grid-template-columns: [col-start] repeat(4, 1fr) [col-end];
-  grid-template-rows: 100vh repeat(4, auto);
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.center-content {
+  margin: 0 auto;
+  text-align: center;
 }
 
 div.social-container a {
@@ -26,8 +35,9 @@ div.social-container a {
 }
 
 footer {
+  text-align: center;
+  margin-top: 30px;
   padding: 30px 0;
-  grid-area: 5 / col-start / 5 / col-end;
 }
 
 h1 {
@@ -58,27 +68,20 @@ section {
   text-align: center;
   display: block;
   padding: 40px 80px;
-  max-width: 1200px;
+  width: 100%;
   min-height: 300px;
-  justify-self: center;
 }
 
 .card {
-  background-image: url("http://via.placeholder.com/250x250");
   height: 250px;
   width: 250px;
   margin: 0 15px;
+  display: inline-block;
   cursor: pointer;
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-}
-
-.center-grid-content {
-  align-self: center;
-  text-align: center;
+  margin-top: 30px;
 }
 
 .dark-bg {
@@ -86,15 +89,10 @@ section {
   color: $primary-light;
 }
 
-.header {
-  display: grid;
-  grid-area: 1 / col-start / 1 / col-end;
-}
-
 .fa-caret-down {
   position: absolute;
-  bottom: 5%;
-  right: 48.6%;
+  bottom: 12%;
+  right: 47.8%;
   cursor: pointer;
 }
 
@@ -112,16 +110,4 @@ section {
 
 .tech-icon {
   margin: 10px;
-}
-
-#about {
-  grid-area: 2 / col-start / 2 / col-end;
-}
-
-#projects {
-  grid-area: 4 / col-start / 4 / col-end;
-}
-
-#experience {
-  grid-area: 3 / col-start / 3 / col-end;
 }
