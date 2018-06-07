@@ -28,7 +28,7 @@ h1 {
 
 .fa-angle-double-down {
   position: absolute;
-  bottom: 100px;
+  bottom: 10%;
   &:hover {
     cursor: pointer;
   }
@@ -50,5 +50,11 @@ footer {
   &:hover {
     text-decoration: none;
     color: #c9c9c9;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .jumbotron {
+    padding-top: 10%;
   }
 }
