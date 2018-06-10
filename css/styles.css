@@ -6,15 +6,15 @@ html {
   height: 100%; }
 
 body {
-  background: #24805a;
-  color: #f7f7f7; }
+  background: #07113b;
+  color: #fffcea; }
 
 .jumbotron {
   height: 100vh;
   text-align: center;
   padding-top: 30%;
   margin-bottom: 0;
-  background: #24805a; }
+  background: #07113b; }
 
 h1 {
   font-size: 4rem; }
@@ -23,7 +23,8 @@ h1 {
   position: absolute;
   bottom: 10%; }
   .fa-angle-double-down:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #ed5757; }
 
 section {
   margin-bottom: 30px;
@@ -33,12 +34,22 @@ footer {
   text-align: center;
   margin-bottom: 50px; }
 
+a {
+  color: #ed5757; }
+  a:hover {
+    color: #fffcea;
+    text-decoration: underline; }
+
 .social {
-  margin: 0 10px;
-  color: white; }
+  margin: 0 10px; }
   .social:hover {
-    text-decoration: none;
-    color: #c9c9c9; }
+    text-decoration: none; }
+
+.skills {
+  text-align: left; }
+
+.alt-color {
+  color: #ed5757; }
 
 @media only screen and (max-height: 500px) {
   .jumbotron {

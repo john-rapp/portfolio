@@ -13,31 +13,11 @@
 </head>
 
 <body>
-  <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#top">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">Bio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
 
   <div class="container">
     <div class="jumbotron" id="top">
       <h1>Hey, I'm John Rapp</h1>
-      <h3>Web Development | UX Design</h3>
+      <h3>Web Development <span class="alt-color">|</span> UX Design</h3>
       <i class="fas fa-angle-double-down fa-2x animated bounce" onclick="scrollToSection('#about')"></i>
     </div>
 
@@ -45,13 +25,30 @@
       <div class="col-md-6">
         <section id="about">
           <h2>Biography</h2>
-          <p>Since graduating with an MIS degree in 2015, I've held many roles in the software development world including business analyst, web developer, and UX designer. Front-end development has become of a passion of mine. I look forward to sharing some of my work and never-ending progress towards perfecting the trade here!</p>
+          <p>Since graduating with an MIS degree in 2015, I've held a variety of roles in the software development world including business analyst, web developer, and UX designer. Front-end development has become of a passion of mine both on and off the job. I look forward to sharing some of my work and progress towards perfecting the trade here. If you want to know more, check out my <strong><a href="https://drive.google.com/open?id=0B1L0VXPOLOK5TFByOW9FODYtWWM" target="_blank">resume.</a></strong></p>
         </section>
       </div>
       <div class="col-md-6">
         <section id="experience">
-          <h2>Experience and Tools</h2>
-          <p>JavaScript, gulp, npm, HTML, and CSS are some of my preferred technologies. I also have experience using tools like Git, Axure, and Photoshop. React and Sketch are two things I'm actively learning in my free time. </p>
+          <h2>Specialties & Tools</h2>
+          <div class="row">
+            <div class="col-6">
+              <ul class="skills">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS & SASS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="skills">
+                <li>Node.js & npm</li>
+                <li>Gulp.js</li>
+                <li>Version control</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -62,9 +59,9 @@
           <h2>Projects</h2>
           <p>I'm working on a few projects that I'll be adding here in the future, but for now, here are some pictures of my dog Winston.</p>
           <div class="row">
-            <div class="col-md-4"><img class="img-thumbnail" src="./images/winston-1.JPG" alt=""></div>
-            <div class="col-md-4"><img class="img-thumbnail" src="./images/winston-2.JPG" alt=""></div>
-            <div class="col-md-4"><img class="img-thumbnail" src="./images/winston-3.jpg" alt=""></div>
+            <div class="col-md-4"><img class="img-thumbnail" src="./images/winston-1.JPG" alt="Winston sitting in the yard."></div>
+            <div class="col-md-4"><img class="img-thumbnail" src="./images/winston-2.JPG" alt="Winston in the snow."></div>
+            <div class="col-md-4"><img class="img-thumbnail" src="./images/winston-3.jpg" alt="Side profile of Winston."></div>
           </div>
         </section>
       </div>
@@ -72,7 +69,7 @@
 
     <footer>
       <h2>Feel free to get a hold of me!</h2>
-      <div id="contact" class="social-container">
+      <section id="contact">
         <a href="https://www.linkedin.com/in/jmrapp/" target="_blank" class="social">
           <i class="fab fa-linkedin fa-3x"></i>
         </a>
@@ -85,7 +82,7 @@
         <a href="https://github.com/john-rapp" target="_blank" class="social">
           <i class="fab fa-github fa-3x"></i>
         </a>
-      </div>
+      </section>
     </footer>
 
   </div>
