@@ -1,0 +1,18 @@
+{
+  "short_name": "John Rapp",
+  "name": "John Rapp | Web Developer",
+  "background_color": "#07113b",
+  "theme_color": "#07113b",
+  "icons": [
+    {
+      "src": "./images/bolt-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/bolt-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
