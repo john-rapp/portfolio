@@ -51,6 +51,13 @@ a {
 .alt-color {
   color: #ed5757; }
 
+img {
+  opacity: 1;
+  transition: opacity 0.3s; }
+
+img[data-src] {
+  opacity: 0; }
+
 @media only screen and (max-height: 500px) {
   .jumbotron {
     padding-top: 10%; } }
