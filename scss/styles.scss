@@ -28,10 +28,13 @@ h1 {
 
 #down-arrow {
   position: absolute;
+  left: 49%;
   bottom: 10%;
+  outline: none;
+  color: $secondary-dark;
   &:hover {
     cursor: pointer;
-    color: $secondary-dark;
+    color: $primary-light;
   }
 }
 

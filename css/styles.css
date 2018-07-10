@@ -21,10 +21,13 @@ h1 {
 
 #down-arrow {
   position: absolute;
-  bottom: 10%; }
+  left: 49%;
+  bottom: 10%;
+  outline: none;
+  color: #ed5757; }
   #down-arrow:hover {
     cursor: pointer;
-    color: #ed5757; }
+    color: #fffcea; }
 
 section {
   margin-bottom: 30px;
