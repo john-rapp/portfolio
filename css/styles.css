@@ -2,9 +2,6 @@
   box-sizing: border-box;
   margin: 0; }
 
-html {
-  height: 100%; }
-
 body {
   background: #07113b;
   color: #fffcea; }
@@ -19,12 +16,16 @@ body {
 h1 {
   font-size: 4rem; }
 
+.section-title {
+  margin-bottom: 20px; }
+
 #down-arrow {
   position: absolute;
   left: 49%;
   bottom: 10%;
   outline: none;
-  color: #ed5757; }
+  color: #ed5757;
+  transition: color 0.3s; }
   #down-arrow:hover {
     cursor: pointer;
     color: #fffcea; }
@@ -38,13 +39,15 @@ footer {
   margin-bottom: 50px; }
 
 a {
-  color: #ed5757; }
+  color: #ed5757;
+  transition: color 0.3s; }
   a:hover {
     color: #fffcea;
     text-decoration: underline; }
 
 .social {
-  margin: 0 10px; }
+  margin: 0 10px;
+  transition: color 0.4s; }
   .social:hover {
     text-decoration: none; }
 
@@ -55,11 +58,22 @@ a {
   color: #ed5757; }
 
 img {
+  margin: 2%;
   opacity: 1;
   transition: opacity 0.3s; }
 
 img[data-src] {
   opacity: 0; }
+
+.project {
+  filter: grayscale(80%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .project:hover {
+    filter: grayscale(0); }
+
+.caption {
+  visibility: hidden; }
 
 @media only screen and (max-height: 500px) {
   .jumbotron {

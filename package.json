@@ -7,7 +7,10 @@
     "url": "https://github.com/john-rapp/john-rapp.github.io"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.7",
+    "browser-sync": "^2.24.5",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "gulp-wait": "0.0.2"
