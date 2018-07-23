@@ -8,11 +8,11 @@
 <head>
   <title>John Rapp | Web Developer</title>
   <link rel="manifest" href="./manifest.json">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="./styles/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/lib/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./dist/styles.min.css">
 </head>
 
 <body>
@@ -28,31 +28,29 @@
       <div class="col-md-6">
         <section id="about">
           <h2 class="section-title">Biography</h2>
-          <p>Since graduating with an MIS degree in 2015, I've held a variety of roles in the software development world including business analyst, web developer, and UX designer. Front-end development has become of a passion of mine both on and off the job. I look forward to sharing some of my work and progress towards perfecting the trade here. If you want to know more, check out my <strong><a href="https://drive.google.com/file/d/1N17fS4kdZbumHL-eZkDS__XeXtsK9nEq/view?usp=sharing" target="_blank" rel="noopener" title="View my resume">resume.</a></strong></p>
+          <p class="text-left">Since graduating with an MIS degree in 2015, I've held a variety of roles in the software development world including business analyst, web developer, and UX designer. Front-end development has become of a passion of mine both on and off the job. I look forward to sharing some of my work and progress towards perfecting the trade here. If you want to know more, check out my <strong><a href="https://drive.google.com/file/d/1N17fS4kdZbumHL-eZkDS__XeXtsK9nEq/view?usp=sharing" target="_blank" rel="noopener" title="View my resume">resume.</a></strong></p>
         </section>
       </div>
       <div class="col-md-6">
         <section id="experience">
           <h2 class="section-title">Specialties & Tools</h2>
-          <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-6 col-sm-5">
-              <ul class="skills">
+          <div class="row shorten-row">
+            <div class="col-xs-6">
+              <ul class="text-left">
                 <li>JavaScript</li>
                 <li>HTML</li>
                 <li>CSS & SASS</li>
                 <li>Bootstrap</li>
               </ul>
             </div>
-            <div class="col-6 col-sm-5">
-              <ul class="skills">
+            <div class="col-xs-6">
+              <ul class="text-left">
                 <li>Node.js & npm</li>
                 <li>Gulp.js</li>
                 <li>Version control</li>
                 <li>React</li>
               </ul>
             </div>
-            <div class="col-sm-1"></div>
           </div>
         </section>
       </div>
@@ -78,7 +76,7 @@
 
     <footer>
       <h2>Feel free to get a hold of me!</h2>
-      <section id="contact">
+      <div id="contact">
         <a href="https://www.linkedin.com/in/jmrapp/" target="_blank" rel="noopener" class="social">
           <i title="Go to LinkedIn" class="fab fa-linkedin fa-3x"></i>
         </a>
@@ -91,14 +89,11 @@
         <a href="https://github.com/john-rapp" target="_blank" rel="noopener" class="social">
           <i title="Go to Github" class="fab fa-github fa-3x"></i>
         </a>
-      </section>
+      </div>
     </footer>
 
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="scripts/main.js"></script>
+  <script src="dist/main.min.js"></script>
 </body>
 
 </html>

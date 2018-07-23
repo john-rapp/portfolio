@@ -4,7 +4,9 @@
 
 body {
   background: #07113b;
-  color: #fffcea; }
+  color: #fffcea;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px; }
 
 .jumbotron {
   height: 100vh;
@@ -31,12 +33,12 @@ h1 {
     color: #fffcea; }
 
 section {
-  margin-bottom: 30px;
+  margin: 5% auto;
   text-align: center; }
 
 footer {
   text-align: center;
-  margin-bottom: 50px; }
+  margin: 5% auto; }
 
 a {
   color: #ed5757;
@@ -51,8 +53,12 @@ a {
   .social:hover {
     text-decoration: none; }
 
-.skills {
+.text-left {
   text-align: left; }
+
+.shorten-row {
+  max-width: 500px;
+  margin: 0 auto; }
 
 .alt-color {
   color: #ed5757; }

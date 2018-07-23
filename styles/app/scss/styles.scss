@@ -8,6 +8,8 @@
 body {
   background: $primary-dark;
   color: $primary-light;
+  font-family: $font-fam;
+  font-size: $base-font-size;
 }
 
 .jumbotron {
@@ -40,13 +42,13 @@ h1 {
 }
 
 section {
-  margin-bottom: 30px;
+  margin: 5% auto;
   text-align: center;
 }
 
 footer {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 5% auto;
 }
 
 a {
@@ -66,8 +68,13 @@ a {
   }
 }
 
-.skills {
+.text-left {
   text-align: left;
+}
+
+.shorten-row {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .alt-color {
