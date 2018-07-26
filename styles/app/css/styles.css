@@ -16,7 +16,8 @@ body {
   background: #07113b; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  margin-bottom: 0; }
 
 .section-title {
   margin-bottom: 20px; }
