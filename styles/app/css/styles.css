@@ -8,31 +8,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 20px; }
 
-.jumbotron {
-  height: 100vh;
-  text-align: center;
-  padding-top: 30%;
-  margin-bottom: 0;
-  background: #07113b; }
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 0; }
-
-.section-title {
-  margin-bottom: 20px; }
-
-#down-arrow {
-  position: absolute;
-  left: 49%;
-  bottom: 10%;
-  outline: none;
-  color: #ed5757;
-  transition: color 0.3s; }
-  #down-arrow:hover {
-    cursor: pointer;
-    color: #fffcea; }
-
 section {
   margin: 5% auto;
   text-align: center; }
@@ -47,6 +22,27 @@ a {
   a:hover {
     color: #fffcea;
     text-decoration: underline; }
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0; }
+
+img {
+  margin: 2%;
+  opacity: 1;
+  transition: opacity 0.3s; }
+  img[data-src] {
+    opacity: 0; }
+
+.jumbotron {
+  height: 100vh;
+  text-align: center;
+  padding-top: 30%;
+  margin-bottom: 0;
+  background: #07113b; }
+
+.section-title {
+  margin-bottom: 20px; }
 
 .social {
   margin: 0 10px;
@@ -64,23 +60,27 @@ a {
 .alt-color {
   color: #ed5757; }
 
-img {
-  margin: 2%;
-  opacity: 1;
-  transition: opacity 0.3s; }
-
-img[data-src] {
-  opacity: 0; }
-
 .project {
-  filter: grayscale(80%);
-  -webkit-transition: 0.3s;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
   transition: 0.3s; }
   .project:hover {
-    filter: grayscale(0); }
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
 
 .caption {
   visibility: hidden; }
+
+#down-arrow {
+  position: absolute;
+  left: 49%;
+  bottom: 10%;
+  outline: none;
+  color: #ed5757;
+  transition: color 0.3s; }
+  #down-arrow:hover {
+    cursor: pointer;
+    color: #fffcea; }
 
 @media only screen and (max-height: 500px) {
   .jumbotron {

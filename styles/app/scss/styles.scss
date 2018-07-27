@@ -12,36 +12,6 @@ body {
   font-size: $base-font-size;
 }
 
-.jumbotron {
-  height: 100vh;
-  text-align: center;
-  padding-top: 30%;
-  margin-bottom: 0;
-  background: $primary-dark;
-}
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 0;
-}
-
-.section-title {
-  margin-bottom: 20px;
-}
-
-#down-arrow {
-  position: absolute;
-  left: 49%;
-  bottom: 10%;
-  outline: none;
-  color: $secondary-dark;
-  transition: color 0.3s;
-  &:hover {
-    cursor: pointer;
-    color: $primary-light;
-  }
-}
-
 section {
   margin: 5% auto;
   text-align: center;
@@ -59,6 +29,32 @@ a {
     color: $primary-light;
     text-decoration: underline;
   }
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+img {
+  margin: 2%;
+  opacity: 1;
+  transition: opacity 0.3s;
+  &[data-src] {
+    opacity: 0;
+  }
+}
+
+.jumbotron {
+  height: 100vh;
+  text-align: center;
+  padding-top: 30%;
+  margin-bottom: 0;
+  background: $primary-dark;
+}
+
+.section-title {
+  margin-bottom: 20px;
 }
 
 .social {
@@ -82,16 +78,6 @@ a {
   color: $secondary-dark;
 }
 
-img {
-  margin: 2%;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-img[data-src] {
-  opacity: 0;
-}
-
 .project {
   filter: grayscale(80%);
   -webkit-transition: 0.3s;
@@ -103,6 +89,19 @@ img[data-src] {
 
 .caption {
   visibility: hidden;
+}
+
+#down-arrow {
+  position: absolute;
+  left: 49%;
+  bottom: 10%;
+  outline: none;
+  color: $secondary-dark;
+  transition: color 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: $primary-light;
+  }
 }
 
 @media only screen and (max-height: 500px) {
