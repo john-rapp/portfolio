@@ -13,43 +13,76 @@ body {
 }
 
 section {
-  margin: 5% auto;
+  margin-bottom: 5%;
   text-align: center;
 }
 
 footer {
+  grid-area: footer;
   text-align: center;
-  margin: 5% auto;
 }
 
 a {
   color: $secondary-dark;
   transition: color 0.3s;
+  text-decoration: none;
   &:hover {
     color: $primary-light;
-    text-decoration: underline;
   }
 }
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 0;
 }
 
 img {
-  margin: 2%;
   opacity: 1;
+  margin-top: 2%;
+  width: 100%;
+  height: auto;
   transition: opacity 0.3s;
   &[data-src] {
     opacity: 0;
   }
 }
 
-.jumbotron {
-  height: 100vh;
+.flex-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tile {
+  width: 48%;
+  margin: 0 1%;
+  font-size: 1.1rem;
   text-align: center;
-  padding-top: 30%;
-  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header'
+    'bio tools'
+    'projects projects'
+    'footer footer';
+}
+
+.header {
+  grid-area: header;
+  height: 100vh;
+  padding-top: 25%;
+  text-align: center;
   background: $primary-dark;
 }
 
@@ -58,20 +91,21 @@ img {
 }
 
 .social {
-  margin: 0 10px;
-  transition: color 0.4s;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.text-left {
-  text-align: left;
+  margin: 0 1%;
+  transition: color 0.3s;
 }
 
 .shorten-row {
   max-width: 500px;
+}
+
+.skill-list {
+  max-width: 350px;
   margin: 0 auto;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .alt-color {
@@ -87,8 +121,20 @@ img {
   }
 }
 
-.caption {
-  visibility: hidden;
+#about {
+  grid-area: bio;
+}
+
+#experience {
+  grid-area: tools;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#contact {
+  margin-top: 1%;
 }
 
 #down-arrow {
@@ -104,8 +150,33 @@ img {
   }
 }
 
-@media only screen and (max-height: 500px) {
-  .jumbotron {
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 5% auto;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tile {
+    width: 98%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-height: 725px) {
+  .header {
     padding-top: 10%;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .header {
+    padding-top: 2%;
   }
 }
