@@ -1,91 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hi, I'm John Rapp and this is my portfolio. I specialize in front-end web development and UX design. Feel free to contact me!">
-<meta name="theme-color" content="#07113b">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Hi, I'm John Rapp and this is my portfolio. I specialize in front-end web development and UX design. Feel free to contact me!"
+  />
+  <meta name="theme-color" content="#07113b" />
 
-<head>
-  <title>John Rapp | Web Developer</title>
-  <link rel="manifest" href="./manifest.json">
-  <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="./styles/lib/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" type="text/css" href="./dist/styles.min.css">
-</head>
+  <head>
+    <title>John Rapp | Web Developer</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./styles/lib/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link rel="stylesheet" type="text/css" href="./dist/styles.min.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="header" id="top">
+        <h1>Hey, I'm John Rapp</h1>
+        <h2>Web Development <span class="alt-color">|</span> UX Design</h2>
+        <i
+          id="down-arrow"
+          class="fas fa-angle-double-down fa-2x"
+          tabindex="0"
+        ></i>
+      </div>
 
-  <div class="container">
-    <div class="header" id="top">
-      <h1>Hey, I'm John Rapp</h1>
-      <h2>Web Development <span class="alt-color">|</span> UX Design</h2>
-      <i id="down-arrow" class="fas fa-angle-double-down fa-2x" tabindex="0"></i>
+      <section id="about">
+        <h2 class="section-title">Biography</h2>
+        <p class="shorten-row">
+          After graduating with an MIS degree in 2015, I've held a variety of
+          roles in the software development world including business analyst,
+          web developer, and UX designer. Front-end development has become of a
+          passion of mine both on and off the job. I look forward to sharing
+          some of my work and progress towards perfecting the trade here. If you
+          want to know more, check out my
+          <strong
+            ><a
+              href="https://drive.google.com/file/d/1N17fS4kdZbumHL-eZkDS__XeXtsK9nEq/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              title="View my resume"
+              >resume.</a
+            ></strong
+          >
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2 class="section-title">Specialties & Tools</h2>
+        <div class="flex-left skill-list">
+          <ul class="text-left">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS & SASS</li>
+            <li>Bootstrap</li>
+          </ul>
+
+          <ul class="text-left">
+            <li>Node.js & npm</li>
+            <li>Gulp</li>
+            <li>Version control</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="flex-center">
+          <div class="tile shorten-row">
+            <span>A color guessing game, refactored to use ES6.</span>
+            <a
+              href="https://codepen.io/jrapp/pen/jpEGWX"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="project"
+                data-src="./images/color-game.jpg"
+                alt="An RGB color guessing game."
+              />
+            </a>
+          </div>
+          <div class="tile shorten-row">
+            <span>A responsive image gallery of my dog, Winston.</span>
+            <a href="gallery.html" target="_blank" rel="noopener">
+              <img
+                class="project"
+                data-src="./images/image-gallery.jpg"
+                alt="An RGB color guessing game."
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <h2>Feel free to get a hold of me!</h2>
+        <div id="contact">
+          <a
+            href="https://www.linkedin.com/in/jmrapp/"
+            target="_blank"
+            rel="noopener"
+            class="social"
+          >
+            <i title="Go to LinkedIn" class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a
+            href="https://twitter.com/j0hnrapp"
+            target="_blank"
+            rel="noopener"
+            class="social"
+          >
+            <i title="Go to Twitter" class="fab fa-twitter fa-3x"></i>
+          </a>
+          <a
+            href="mailto:johnrapp814@gmail.com"
+            target="_blank"
+            rel="noopener"
+            class="social"
+          >
+            <i title="Email me" class="far fa-envelope fa-3x"></i>
+          </a>
+          <a
+            href="https://github.com/john-rapp"
+            target="_blank"
+            rel="noopener"
+            class="social"
+          >
+            <i title="Go to Github" class="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+      </footer>
     </div>
-
-    <section id="about">
-      <h2 class="section-title">Biography</h2>
-      <p class="shorten-row">After graduating with an MIS degree in 2015, I've held a variety of roles in the software development world including business analyst, web developer, and UX designer. Front-end development has become of a passion of mine both on and off the job. I look forward to sharing some of my work and progress towards perfecting the trade here. If you want to know more, check out my <strong><a href="https://drive.google.com/file/d/1N17fS4kdZbumHL-eZkDS__XeXtsK9nEq/view?usp=sharing" target="_blank" rel="noopener" title="View my resume">resume.</a></strong></p>
-    </section>
-
-    <section id="experience">
-      <h2 class="section-title">Specialties & Tools</h2>
-      <div class="flex-left skill-list">
-
-        <ul class="text-left">
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS & SASS</li>
-          <li>Bootstrap</li>
-        </ul>
-
-        <ul class="text-left">
-          <li>Node.js & npm</li>
-          <li>Gulp</li>
-          <li>Version control</li>
-          <li>React</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="flex-center">
-        <div class="tile shorten-row">
-          <span>A color guessing game, refactored to use ES6.</span>
-          <a href="https://codepen.io/jrapp/pen/jpEGWX" target="_blank" rel="noopener">
-            <img class="project" data-src="./images/color-game.jpg" alt="An RGB color guessing game.">
-          </a>
-        </div>
-        <div class="tile shorten-row">
-          <span>A responsive image gallery of my dog, Winston.</span>
-          <a href="gallery.html" target="_blank" rel="noopener">
-            <img class="project" data-src="./images/image-gallery.jpg" alt="An RGB color guessing game.">
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <h2>Feel free to get a hold of me!</h2>
-      <div id="contact">
-        <a href="https://www.linkedin.com/in/jmrapp/" target="_blank" rel="noopener" class="social">
-          <i title="Go to LinkedIn" class="fab fa-linkedin fa-3x"></i>
-        </a>
-        <a href="https://www.twitter.com/realjohnrapp/" target="_blank" rel="noopener" class="social">
-          <i title="Go to Twitter" class="fab fa-twitter fa-3x"></i>
-        </a>
-        <a href="mailto:johnrapp814@gmail.com" target="_blank" rel="noopener" class="social">
-          <i title="Email me" class="far fa-envelope fa-3x"></i>
-        </a>
-        <a href="https://github.com/john-rapp" target="_blank" rel="noopener" class="social">
-          <i title="Go to Github" class="fab fa-github fa-3x"></i>
-        </a>
-      </div>
-    </footer>
-
-  </div>
-  <script src="dist/main.min.js"></script>
-</body>
-
+    <script src="dist/main.min.js"></script>
+  </body>
 </html>
