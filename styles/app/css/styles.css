@@ -4,8 +4,8 @@
   margin: 0; }
 
 body {
-  background: #07113b;
-  color: #fffcea;
+  background: #323c40;
+  color: #edebe4;
   font-family: "Raleway", sans-serif;
   font-size: 20px; }
 
@@ -18,11 +18,11 @@ footer {
   text-align: center; }
 
 a {
-  color: #ed5757;
+  color: #ff674f;
   transition: color 0.3s;
   text-decoration: none; }
   a:hover {
-    color: #fffcea; }
+    color: #edebe4; }
 
 h1 {
   font-size: 4rem; }
@@ -41,7 +41,7 @@ ul {
 
 li::before {
   content: '•';
-  color: #ed5757;
+  color: #ff674f;
   display: inline-block;
   width: 1em;
   margin-left: -1em; }
@@ -75,7 +75,7 @@ li::before {
   height: 100vh;
   padding-top: 25%;
   text-align: center;
-  background: #07113b; }
+  background: #323c40; }
 
 .section-title {
   margin-bottom: 20px; }
@@ -95,7 +95,7 @@ li::before {
   text-align: left; }
 
 .alt-color {
-  color: #ed5757; }
+  color: #ff674f; }
 
 .project {
   -webkit-filter: grayscale(80%);
@@ -122,11 +122,11 @@ li::before {
   left: 49%;
   bottom: 10%;
   outline: none;
-  color: #ed5757;
+  color: #ff674f;
   transition: color 0.3s; }
   #down-arrow:hover {
     cursor: pointer;
-    color: #fffcea; }
+    color: #edebe4; }
 
 @media only screen and (min-width: 1100px) {
   .container {

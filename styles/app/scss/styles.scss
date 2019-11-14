@@ -52,7 +52,7 @@ ul {
 
 li::before {
   content: '•';
-  color: #ed5757;
+  color: $secondary-dark;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
