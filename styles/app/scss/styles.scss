@@ -18,16 +18,15 @@ section {
 }
 
 footer {
-  grid-area: footer;
   text-align: center;
 }
 
 a {
-  color: $secondary-dark;
+  color: $primary-light;
   transition: color 0.3s;
   text-decoration: none;
   &:hover {
-    color: $primary-light;
+    color: $primary-dark;
   }
 }
 
@@ -46,24 +45,6 @@ img {
   }
 }
 
-ul {
-  list-style: none;
-}
-
-li::before {
-  content: '•';
-  color: $secondary-dark;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.flex-left {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
 .flex-center {
   display: flex;
   flex-wrap: wrap;
@@ -72,26 +53,25 @@ li::before {
 
 .tile {
   width: 48%;
-  margin: 0 1%;
+  margin-bottom: 20px;
   font-size: 1.1rem;
   text-align: center;
 }
 
+.alt-text-bg {
+  background: $secondary-dark;
+  color: $primary-dark;
+  padding: 15px;
+  border-radius: 15px;
+}
+
 .container {
   max-width: 1024px;
-  margin: 5%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'header header'
-    'bio tools'
-    'projects projects'
-    'footer footer';
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .header {
-  grid-area: header;
   height: 100vh;
   padding-top: 25%;
   text-align: center;
@@ -107,13 +87,18 @@ li::before {
   transition: color 0.3s;
 }
 
-.shorten-row {
-  max-width: 500px;
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.skill-list {
-  max-width: 350px;
-  margin: 0 auto;
+.skill {
+  margin: 5px;
+  transition: 0.3s;
+  &:hover {
+    background-color: $primary-light;
+    cursor: default;
+  }
 }
 
 .text-left {
@@ -125,24 +110,12 @@ li::before {
 }
 
 .project {
-  filter: grayscale(80%);
+  filter: grayscale(100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   &:hover {
     filter: grayscale(0);
   }
-}
-
-#about {
-  grid-area: bio;
-}
-
-#experience {
-  grid-area: tools;
-}
-
-#projects {
-  grid-area: projects;
 }
 
 #contact {
@@ -159,41 +132,5 @@ li::before {
   &:hover {
     cursor: pointer;
     color: $primary-light;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .container {
-    margin: 5% auto;
-  }
-}
-
-@media only screen and (max-width: 921px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5% auto;
-  }
-
-  .tile {
-    width: 98%;
-    margin-bottom: 2%;
-  }
-}
-
-@media only screen and (max-height: 725px) {
-  .header {
-    padding-top: 10%;
-  }
-}
-
-@media only screen and (max-height: 400px) {
-  body {
-    font-size: 18px;
-  }
-
-  .header {
-    padding-top: 2%;
   }
 }
