@@ -84,7 +84,10 @@ img {
 
 .social {
   margin: 0 2%;
-  transition: color 0.3s;
+  transition: 0.3s;
+  &:hover {
+    color: $secondary-dark;
+  }
 }
 
 .skill-list {

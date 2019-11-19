@@ -67,7 +67,9 @@ img {
 
 .social {
   margin: 0 2%;
-  transition: color 0.3s; }
+  transition: 0.3s; }
+  .social:hover {
+    color: #9b4fff; }
 
 .skill-list {
   display: flex;
