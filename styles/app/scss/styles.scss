@@ -52,7 +52,7 @@ img {
 }
 
 .tile {
-  width: 48%;
+  max-width: 400px;
   margin-bottom: 20px;
   font-size: 1.1rem;
   text-align: center;
@@ -80,6 +80,11 @@ img {
 
   & > div {
     align-self: center;
+
+    @media (max-width: 600px) {
+      align-self: flex-start;
+      margin-top: 70px;
+    }
   }
 }
 
@@ -128,7 +133,7 @@ img {
 }
 
 #contact {
-  margin-top: 1%;
+  margin-top: 20px;
 }
 
 #down-arrow {
@@ -138,6 +143,7 @@ img {
   outline: none;
   color: $secondary-dark;
   transition: color 0.3s;
+
   &:hover {
     cursor: pointer;
     color: $primary-light;

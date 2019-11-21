@@ -40,7 +40,7 @@ img {
   justify-content: center; }
 
 .tile {
-  width: 48%;
+  max-width: 400px;
   margin-bottom: 20px;
   font-size: 1.1rem;
   text-align: center; }
@@ -64,6 +64,10 @@ img {
   background: #304269; }
   .header > div {
     align-self: center; }
+    @media (max-width: 600px) {
+      .header > div {
+        align-self: flex-start;
+        margin-top: 70px; } }
 
 .section-title {
   margin-bottom: 20px; }
@@ -101,7 +105,7 @@ img {
             filter: grayscale(0); }
 
 #contact {
-  margin-top: 1%; }
+  margin-top: 20px; }
 
 #down-arrow {
   position: absolute;
