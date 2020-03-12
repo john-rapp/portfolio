@@ -1,6 +1,7 @@
 import "./styles/app/scss/styles.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./images/color-game.jpg";
+import "./images/color-game.png";
+import "./images/portfolio.png";
 
 const images = [...document.querySelectorAll("[data-src]")];
 const downArrow = document.querySelector(".fa-angle-double-down");

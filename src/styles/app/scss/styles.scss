@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 * {
   box-sizing: border-box;
@@ -35,8 +35,9 @@ h1 {
 }
 
 img {
+  border: 1px solid #000;
   opacity: 1;
-  margin-top: 2%;
+  margin-top: 1em;
   width: 100%;
   height: auto;
   transition: opacity 0.3s;
@@ -48,7 +49,7 @@ img {
 .flex-center {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .tile {
