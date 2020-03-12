@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "./src/templates/index.html",
       favicon: "./src/images/favicon.png"
     }),
     new CleanWebpackPlugin()
