@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node src/deploy.js",
     "start": "webpack-dev-server --open"
   },
   "devDependencies": {
