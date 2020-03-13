@@ -26,7 +26,7 @@ a {
   transition: color 0.3s;
   text-decoration: underline;
   &:hover {
-    color: $primary-dark;
+    color: $secondary-light;
   }
 }
 
@@ -60,10 +60,8 @@ img {
 }
 
 .alt-text-bg {
-  background: $secondary-dark;
   color: $primary-light;
   padding: 15px;
-  border-radius: 15px;
 }
 
 .container {
@@ -90,7 +88,10 @@ img {
 }
 
 .section-title {
+  border-bottom: 3px solid $secondary-dark;
   margin-bottom: 20px;
+  text-align: left;
+  width: min-content;
 }
 
 .social {
@@ -105,6 +106,7 @@ img {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill {
@@ -133,6 +135,10 @@ img {
   }
 }
 
+#about p {
+  text-align: right;
+}
+
 #contact {
   margin-top: 20px;
 }
@@ -147,6 +153,6 @@ img {
 
   &:hover {
     cursor: pointer;
-    color: $primary-light;
+    color: $secondary-light;
   }
 }
