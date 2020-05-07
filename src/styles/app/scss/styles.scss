@@ -3,6 +3,13 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Road Rage";
+  src: url("../../../fonts/Road_Rage.woff2") format("woff2"),
+    url("../../../fonts/Road_Rage.woff2") format("woff");
 }
 
 body {
@@ -13,37 +20,50 @@ body {
 }
 
 section {
-  margin-bottom: 7%;
-  text-align: center;
-}
-
-footer {
+  margin-bottom: 60px;
   text-align: center;
 }
 
 a {
-  color: $primary-light;
+  color: $secondary-light;
   transition: color 0.3s;
-  text-decoration: underline;
+  text-decoration: none;
   &:hover {
-    color: $secondary-light;
+    color: $secondary-dark;
   }
 }
 
 h1 {
-  font-size: 4rem;
+  font-family: "Road Rage";
+  font-size: 6rem;
+  color: $secondary-light;
+
+  @media (max-width: $view-sm) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: $font-alt;
+  @media (max-width: $view-sm) {
+    font-size: 1.5rem;
+  }
 }
 
 img {
   border: 1px solid #000;
   opacity: 1;
-  margin-top: 1em;
+  margin-top: 15px;
   width: 100%;
   height: auto;
   transition: opacity 0.3s;
   &[data-src] {
     opacity: 0;
   }
+}
+
+i {
+  margin-right: 10px;
 }
 
 .flex-center {
@@ -55,7 +75,6 @@ img {
 .tile {
   max-width: 400px;
   margin-bottom: 20px;
-  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -79,27 +98,39 @@ img {
 
   & > div {
     align-self: center;
-
-    @media (max-width: 600px) {
-      align-self: flex-start;
-      margin-top: 70px;
-    }
   }
 }
 
 .section-title {
   border-bottom: 3px solid $secondary-dark;
+  font-family: $font-alt;
   margin-bottom: 20px;
   text-align: left;
   width: min-content;
 }
 
 .social {
-  margin: 0 2%;
+  display: block;
+  margin-bottom: 20px;
   transition: 0.3s;
   text-decoration: none;
+  width: max-content;
   &:hover {
     color: $secondary-dark;
+  }
+
+  @media (max-width: $view-sm) {
+    display: inline;
+    margin-right: 15px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.social-text {
+  @media (max-width: $view-sm) {
+    display: none;
   }
 }
 
@@ -127,11 +158,28 @@ img {
 }
 
 .project {
-  filter: grayscale(100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   &:hover {
-    filter: grayscale(0);
+    transform: scale(1.03);
+  }
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $view-sm) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  font-family: "Road Rage";
+  font-size: 8rem;
+
+  @media (max-width: $view-sm) {
+    font-size: 4rem;
   }
 }
 
@@ -140,19 +188,10 @@ img {
 }
 
 #contact {
-  margin-top: 20px;
-}
+  margin: 20px 0 0 0;
+  text-align: left;
 
-#down-arrow {
-  position: absolute;
-  left: 49%;
-  bottom: 10%;
-  outline: none;
-  color: $secondary-dark;
-  transition: color 0.3s;
-
-  &:hover {
-    cursor: pointer;
-    color: $secondary-light;
+  @media (max-width: $view-sm) {
+    text-align: center;
   }
 }

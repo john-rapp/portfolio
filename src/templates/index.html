@@ -12,44 +12,38 @@
     <title>John Rapp | Front End Developer</title>
     <link rel="manifest" href="../../manifest.json" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
     />
   </head>
 
   <body>
     <div class="container">
       <div class="header" id="top">
-        <i
-          id="down-arrow"
-          class="fas fa-angle-double-down fa-2x"
-          tabindex="0"
-        ></i>
         <div>
           <h1>John Rapp</h1>
           <h2>
-            Front End Developer <span class="alt-color">|</span> UX Design
+            Front End Developer
           </h2>
         </div>
       </div>
       <section id="about">
         <h2 class="section-title">About</h2>
         <p class="alt-text-bg">
-          Hi, I'm John. During my 6 years of industry experience, I've held
-          roles as a software engineer, IT analyst, and UX designer. Trying on
-          those different hats has allowed me to realize that web development is
-          a passion of mine. Progression is key in all facets of life, so I'll
-          be uploading projects here as I experiment and learn. If you want to
-          know more, check out my
-          <strong
-            ><a
-              href="https://drive.google.com/file/d/1cR9dS9TTToRjvBC3aS6Qlczs1NZuCAso/view?usp=sharing"
-              target="_blank"
-              rel="noopener"
-              title="View my resume"
-              >resume.</a
-            >
-          </strong>
+          Hi, I'm John. Throughout my 6 years of industry experience, I've held
+          roles as a software engineer, IT analyst, and UX designer. Each of
+          those experiences has allowed me to realize that web development is a
+          passion of mine. I'll be uploading projects here as I experiment and
+          learn new technologies (a little accountability never hurt either). If
+          you want to know more, check out my
+          <a
+            href="https://drive.google.com/file/d/1cR9dS9TTToRjvBC3aS6Qlczs1NZuCAso/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            title="View my resume"
+            >resume</a
+          >
+          or <a href="#contact">contact</a> me directly.
         </p>
       </section>
 
@@ -84,6 +78,7 @@
               <img
                 src="../images/color-game.png"
                 alt="An RGB color guessing game."
+                class="project"
               />
             </a>
           </div>
@@ -94,7 +89,11 @@
               target="_blank"
               rel="noopener"
             >
-              <img src="../images/portfolio.png" alt="Portfolio site code." />
+              <img
+                src="../images/portfolio.png"
+                alt="Portfolio site code."
+                class="project"
+              />
             </a>
           </div>
         </div>
@@ -102,40 +101,52 @@
       </section>
 
       <footer>
-        <div id="contact">
-          <a
-            href="https://www.linkedin.com/in/jmrapp/"
-            target="_blank"
-            rel="noopener"
-            class="social"
-          >
-            <i title="Go to LinkedIn" class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a
-            href="https://twitter.com/j0hnrapp"
-            target="_blank"
-            rel="noopener"
-            class="social"
-          >
-            <i title="Go to Twitter" class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a
-            href="mailto:johnrapp814@gmail.com"
-            target="_blank"
-            rel="noopener"
-            class="social"
-          >
-            <i title="Email me" class="far fa-envelope fa-2x"></i>
-          </a>
-          <a
-            href="https://github.com/john-rapp"
-            target="_blank"
-            rel="noopener"
-            class="social"
-          >
-            <i title="Go to Github" class="fab fa-github fa-2x"></i>
-          </a>
-        </div>
+        <section id="contact" name="contact">
+          <h2 class="section-title">Contact</h2>
+          <div class="link-container">
+            <div>
+              <a
+                href="mailto:johnrapp814@gmail.com"
+                target="_blank"
+                rel="noopener"
+                class="social"
+              >
+                <i title="Email me" class="far fa-envelope fa-2x"></i>
+                <span class="social-text">johnrapp814@gmail.com</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jmrapp/"
+                target="_blank"
+                rel="noopener"
+                class="social"
+              >
+                <i title="Go to LinkedIn" class="fab fa-linkedin fa-2x"></i>
+                <span class="social-text"
+                  >https://www.linkedin.com/in/jmrapp/</span
+                >
+              </a>
+              <a
+                href="https://twitter.com/j0hnrapp"
+                target="_blank"
+                rel="noopener"
+                class="social"
+              >
+                <i title="Go to Twitter" class="fab fa-twitter fa-2x"></i>
+                <span class="social-text">https://twitter.com/j0hnrapp</span>
+              </a>
+              <a
+                href="https://github.com/john-rapp"
+                target="_blank"
+                rel="noopener"
+                class="social"
+              >
+                <i title="Go to Github" class="fab fa-github fa-2x"></i>
+                <span class="social-text">https://github.com/john-rapp</span>
+              </a>
+            </div>
+            <div class="logo">JR</div>
+          </div>
+        </section>
       </footer>
     </div>
   </body>
