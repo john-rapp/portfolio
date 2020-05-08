@@ -3,32 +3,38 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: [
+    "webpack-dev-server/client?http://192.168.1.10:8080",
+    "./src/index.js",
+  ],
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/templates/index.html",
-      favicon: "./src/images/favicon.png"
+      favicon: "./src/images/favicon.png",
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
   ],
   devServer: {
     contentBase: "./dist",
-    hot: true
+    disableHostCheck: true,
+    hot: true,
+    host: "192.168.1.10",
+    liveReload: true,
   },
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   mode: "development",
   module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|gif)$/i,
@@ -36,19 +42,19 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              esModule: false
-            }
-          }
-        ]
+              esModule: false,
+            },
+          },
+        ],
       },
       {
         test: /\.(woff[2]?|ttf|eot)$/i,
-        use: ["file-loader"]
+        use: ["file-loader"],
       },
       {
         test: /\.html$/i,
-        use: ["html-loader"]
-      }
-    ]
-  }
+        use: ["html-loader"],
+      },
+    ],
+  },
 };

@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -87,12 +87,17 @@ i {
   max-width: 1024px;
   margin: 0 auto;
   padding: 20px;
+
+  @media (max-width: $view-sm) {
+    padding: 10px;
+  }
 }
 
 .header {
   display: flex;
   justify-content: center;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   text-align: center;
   background: $primary-dark;
 
@@ -177,9 +182,20 @@ i {
 .logo {
   font-family: "Road Rage";
   font-size: 8rem;
+  margin-right: 15px;
 
   @media (max-width: $view-sm) {
     font-size: 4rem;
+    margin-right: 0;
+  }
+}
+
+.nav-link {
+  color: $primary-light;
+  font-family: $font-alt;
+
+  &:hover {
+    color: $secondary-dark;
   }
 }
 
@@ -194,4 +210,13 @@ i {
   @media (max-width: $view-sm) {
     text-align: center;
   }
+}
+
+.navbar {
+  background-color: $primary-dark;
+  justify-content: flex-end;
+}
+
+#navbarNav {
+  justify-content: flex-end;
 }
