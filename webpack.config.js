@@ -3,11 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: [
-    "webpack-dev-server/client?http://192.168.1.10:8080",
-    "webpack/hot/only-dev-server",
-    "./src/index.js",
-  ],
+  entry: ["./src/index.js"],
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/templates/index.html",
@@ -17,7 +13,6 @@ module.exports = {
   ],
   devServer: {
     contentBase: "./dist",
-    disableHostCheck: true,
     hot: true,
     host: "192.168.1.10",
     liveReload: true,
