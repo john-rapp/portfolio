@@ -97,12 +97,15 @@ i {
   display: flex;
   justify-content: center;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   text-align: center;
   background: $primary-dark;
 
   & > div {
     align-self: center;
+
+    @media (max-width: $view-sm) {
+      margin-bottom: 50px;
+    }
   }
 }
 
