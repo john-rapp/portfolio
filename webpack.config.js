@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: [
     "webpack-dev-server/client?http://192.168.1.10:8080",
+    "webpack/hot/only-dev-server",
     "./src/index.js",
   ],
   plugins: [
