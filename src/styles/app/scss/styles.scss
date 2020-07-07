@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: "Road Rage";
-  src: url("../../../fonts/Road_Rage.woff2") format("woff2"),
-    url("../../../fonts/Road_Rage.woff2") format("woff");
+  font-family: 'Road Rage';
+  src: url('../../../fonts/Road_Rage.woff2') format('woff2'),
+    url('../../../fonts/Road_Rage.woff2') format('woff');
 }
 
 body {
@@ -34,7 +34,7 @@ a {
 }
 
 h1 {
-  font-family: "Road Rage";
+  font-family: 'Road Rage';
   font-size: 6rem;
   color: $secondary-light;
 
@@ -51,9 +51,7 @@ h2 {
 }
 
 img {
-  border: 1px solid #000;
   opacity: 1;
-  margin-top: 15px;
   width: 100%;
   height: auto;
   transition: opacity 0.3s;
@@ -67,15 +65,38 @@ i {
 }
 
 .flex-center {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
 .tile {
-  max-width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  width: 100%;
+
+  @media (max-width: $view-md) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.project {
+  margin-right: 10px;
+  max-width: 400px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.description {
+  width: 100%;
 }
 
 .alt-text-bg {
@@ -165,14 +186,6 @@ i {
   color: $secondary-dark;
 }
 
-.project {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  &:hover {
-    transform: scale(1.03);
-  }
-}
-
 .link-container {
   display: flex;
   justify-content: space-between;
@@ -183,7 +196,7 @@ i {
 }
 
 .logo {
-  font-family: "Road Rage";
+  font-family: 'Road Rage';
   font-size: 8rem;
   margin-right: 15px;
 
@@ -203,7 +216,7 @@ i {
 }
 
 #about p {
-  text-align: right;
+  text-align: left;
 }
 
 #contact {
@@ -215,6 +228,10 @@ i {
   }
 }
 
+.nav-item {
+  text-align: right;
+}
+
 .navbar {
   background-color: $primary-dark;
   justify-content: flex-end;
@@ -222,4 +239,10 @@ i {
 
 #navbarNav {
   justify-content: flex-end;
+  padding-right: 60px;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
 }
